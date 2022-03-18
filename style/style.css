@@ -1,0 +1,203 @@
+/* ESTILOS BASE */
+body {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  background-color: #f3f3f3;
+}
+
+main {
+  max-width: 62rem;
+  display: grid;
+  margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+a,
+li {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+h1 {
+  padding: 0rem 0.2rem;
+}
+
+h3,
+h4 {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: inside;
+  padding: 0rem 0rem;
+  margin: 0rem;
+}
+
+ol {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+a {
+  display: block;
+}
+
+header {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  justify-items: center;
+}
+
+/* ESTILOS DAS CLASSES */
+/* CABEÇALHO DO SITE */
+.foto-perfil {
+  height: 10rem;
+  display: block;
+  border-radius: 0.2rem;
+}
+
+.contatos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 1rem;
+}
+
+.link-redes {
+  height: 3rem;
+  width: 6rem;
+  border-radius: 0.3rem;
+  border: transparent solid 0.1rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.frase {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding: 0rem 1rem;
+}
+
+/* TECNOLOGIAS CONHECIDAS*/
+.tecnologias-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.tecnologias-item h3 {
+  text-transform: capitalize;
+}
+
+/* EXPERIÊNCIAS PROFISSIONAIS */
+.experiencias {
+  max-width: 62rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+h2 {
+  text-align: center;
+  background-color: #015186;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.experiencias-empresa {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.empresa {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.funções h4 {
+  margin-bottom: 0.5rem;
+}
+
+.funções-item {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.funções ul {
+  padding: 0rem 0.5rem;
+}
+
+/* DADOS PESSOAIS */
+.dados-pessoais {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: left;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.dados-pessoais-item {
+  display: grid;
+  padding: 0rem;
+  align-content: flex-start;
+  gap: 0.5rem;
+}
+
+.dados-pessoais-item ul {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+
+.dados-pessoais-item ol {
+  margin: 0rem;
+  padding: 0rem 1.5rem;
+}
+
+/* RESPONSIVOS */
+.link-redes:hover {
+  box-shadow: 0rem 0rem 0.5rem #0072be;
+}
+
+@media (max-width: 42rem) {
+  .tecnologias-item {
+    display: grid;
+  }
+  .dados-pessoais {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .experiencias {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .experiencias-empresa {
+    gap: 1rem;
+  }
+  .empresa {
+    display: grid;
+  }
+}
